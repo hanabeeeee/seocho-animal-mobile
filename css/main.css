@@ -1,4 +1,9 @@
-@import url(reset.css);
+@import url('reset.css');
+@import url('notice.css');
+@import url('detail.css');
+@import url('process.css');
+@import url('rules.css');
+@import url('center.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
@@ -12,7 +17,6 @@
     --bg-color03: #fff;
     --header-height: 55px;
     --footer-height: 200px;
-   --footer-height: 200px;
 }
 
 
@@ -51,7 +55,7 @@ input {
 
 
 /*헤더 버튼*/
-#icon-menu button {
+#main-header #icon-menu button {
     border-style: none;
     background-color: var(--main-color);
     color: #fff;
@@ -59,35 +63,114 @@ input {
     height: var(--header-height);
 }
 
+/*gnb*/
+
+#gnb {
+    display: none;
+    background: #fff;
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    transform: translateX(100%);
+    transition-duration: 0.8s;
+    z-index: 999; 
+    
+}
+
+#gnb.on {
+    transform: translateX(0%);
+    /*gnb켜지면 메인 어두워지게(추후수정)*/
+}
+
+#gnb a:hover {
+    color:#EF5797;
+}
+
+#gnb a {
+    color: #000000;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+/*gnb detail menu*/
+#gnb ul {
+    position: absolute;
+    width: 100%;
+    top: 51px;
+    font-size: 16px;
+    color: #000;
+  }
+
+#gnb ul li {
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#gnb ul li a {
+    color: #333;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+/*닫기 버튼*/
+#btn-close {
+    position: absolute;
+    background-color: var(--main-color);
+    color:#fff;
+    right: 0px;
+    top: 0px;
+    width: var(--header-height);
+    height: var(--header-height);
+   border-style: none;
+   text-decoration: none;
+}
+
+#btn-close .bi {
+    font-size: 50px;
+}
+
 
 /* 서초동물사랑센터 - 리트리버*/
-.main{
+#main .main {
     text-align: center;
     display: flex;
     flex-direction: column;
+    height: calc(100% - var(--header-height));
     padding-top: 250px;
     padding-bottom: 250px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/dog.jpeg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/dog.jpeg);
     background-size: cover;
     background-position: center;
     color: #fff;
     align-items: center;
-    
+}
+
+#main .main h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#main .main p {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /* 보호동물 */
-.container{
-    margin-top: 30px;
-    margin-left: 20px;
+#main .container {
+    margin: 20px;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-
 /* 더보기+ */
-.btn{
-    margin-top: 15px;
-    margin-right: 20px;
+#main .btn{
     border-style: none;
     background-color: var(--main-color);
     color: #fff;
@@ -99,21 +182,51 @@ input {
 }
 
 
+#main .swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* outline: 1px solid red; */
+}
+
+#main .swiper-slide img {
+    width: 100%;
+    /* outline: 1px solid orange; */
+}
+
+#main .swiper .swiper-button-prev {
+    color: var(--bg-color03);
+    margin-left: 20px;
+}
+
+#main .swiper .swiper-button-next {
+    color: var(--bg-color03);
+    margin-right: 20px;
+}
+
 /* 보호동물사진 이용시간사진*/
-.container2{
+#main .main-info {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 10px;
-    
+    margin: 20px;
 }
 
-.fixed {
+#main .main .fixed {
     position: fixed;
     right: 10px;
     bottom: 50px;
+    z-index: 999;
 }
+
+#main .main .fixed .kakao img {
+    width: 50px;
+    height: 50px;
+}
+
+
 
 /*footer*/
 

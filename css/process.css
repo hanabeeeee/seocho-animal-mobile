@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
@@ -12,9 +12,7 @@
     --bg-color03: #fff;
     --header-height: 55px;
     --footer-height: 200px;
-   --footer-height: 200px;
 }
-
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -224,11 +222,11 @@ input {
 }
 
 #process ul li:nth-child(odd) {
-    border: 1px solid #EF5797;
+    border: 1px solid var(--main-color);
 }
 
 #process ul li:nth-child(even) {
-    border: 1px solid #000000;
+    border: 1px solid var(--bg-color01);
 }
 
 #process ul li:last-child {

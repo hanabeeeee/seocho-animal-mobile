@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
@@ -12,7 +12,6 @@
     --bg-color03: #fff;
     --header-height: 55px;
     --footer-height: 200px;
-   --footer-height: 200px;
 }
 
 
@@ -133,51 +132,6 @@ input {
 
 
 
-/*footer*/
-
-#footer {
-    width: 100%;
-    height: var(--footer-height);
-    background: var(--bg-color01);
-    color: #fff;
-    font-size: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    /* position: absolute;
-    bottom: 0; */
-}
-
-#footer a {
-    color: #fff;
-}
-
-/*글자 굵기*/
-#footer .footer-menu a {
-    font-weight: 500;
-}
-
-/*아이콘 사이 여백*/
-#footer .bi {
-    font-size: 24px;
-    margin-left: 0.5em;
-}
-
-/*줄 사이 간격*/
-#footer .footer-menu {
-    padding-bottom: 12px;
-}
-
-#footer .sns-link {
-    padding-bottom: 23px;
-}
-
-#footer .address {
-    padding-bottom: 12px;
-}
 /* main */
 #center .page {
     text-align: center;
@@ -255,4 +209,52 @@ input {
 
 #center section p a:hover {
     color: #4E88C7;
+}
+
+
+
+/*footer*/
+
+#footer {
+    width: 100%;
+    height: var(--footer-height);
+    background: var(--bg-color01);
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+#footer a {
+    color: #fff;
+}
+
+/*글자 굵기*/
+#footer .footer-menu a {
+    font-weight: 500;
+}
+
+/*아이콘 사이 여백*/
+#footer .bi {
+    font-size: 24px;
+    margin-left: 0.5em;
+}
+
+/*줄 사이 간격*/
+#footer .footer-menu {
+    padding-bottom: 12px;
+}
+
+#footer .sns-link {
+    padding-bottom: 23px;
+}
+
+#footer .address {
+    padding-bottom: 12px;
 }

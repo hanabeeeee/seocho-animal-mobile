@@ -1,5 +1,5 @@
-@import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 :root {
@@ -12,16 +12,15 @@
     --bg-color03: #fff;
     --header-height: 55px;
     --footer-height: 200px;
-   --footer-height: 200px;
 }
 
 
- body {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        background-color: var(--bg-color03);
-        color: var(--text-color);
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--bg-color03);
+    color: var(--text-color);
 }
 
 input {
@@ -86,7 +85,7 @@ input {
 }
 
 #gnb a:hover {
-    color:#EF5797;
+    color: #EF5797;
 }
 
 #gnb a {
@@ -102,7 +101,7 @@ input {
     top: 51px;
     font-size: 16px;
     color: #000;
-  }
+}
 
 #gnb ul li {
     border-bottom: 1px solid rgb(200, 200, 200);
@@ -122,13 +121,13 @@ input {
 #btn-close {
     position: absolute;
     background-color: var(--main-color);
-    color:#fff;
+    color: #fff;
     right: 0px;
     top: 0px;
     width: var(--header-height);
     height: var(--header-height);
-   border-style: none;
-   text-decoration: none;
+    border-style: none;
+    text-decoration: none;
 }
 
 #btn-close .bi {
@@ -188,108 +187,7 @@ input {
 
 
 
-
-
-
-
-/* rules main */
-
-/*이용수칙 h1*/
-#rules .container {
-    width: 100%;
-
-}
-
-#rules .container h1 {
-    font-size: 20px;
-    background-color: var(--sub-color02);
-    color:#fff;
-    height: 45px;
-    text-align: center;
-    padding-top: 6px;
-    font-weight: 400;
-}
-
-
-/*카테고리*/
-#rules .category-menu {
-    display: flex;
-    overflow: scroll;
-    margin-top: 23px;
-    margin-bottom: 23px;
-    justify-content: center;
-  }
-  
-#rules .category-menu a {
-    white-space: nowrap;
-    margin-right: 5px;
-    color: var(--text-color);
-  }
-
-#rules .category-menu span {
-    color: #999999;
-}
-
-#rules .rules img {
-    width: 100%;
-}
-
-/*경고*/
-
-/*경고 상단 텍스트*/
-#rules .warn h2 {
-    margin-top: 22px;
-    margin-bottom: 22px;
-    color: var(--sub-color02);
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-}
-
-/*경고 정렬*/
-#rules .warn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#rules .warn span {
-    color: var(--sub-color02);
-}
-
-#rules .warn p {
-    padding-top: 13px;
-}
-
-/*경고 이미지박스 디테일*/
-#rules .warn-box-01, .warn-box-02 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 223px;
-    height: 223px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 33px;
-
-}
-
-/*이미지박스 사이 여백*/
-#rules .warn-box-01 {
-    margin-bottom: 33px;
-}
-
-
-
-
-
-
-/*notice*/
-
-/*입양공고*/
+/*notice 입양공고*/
 
 #notice .container {
     width: 100%;
@@ -299,7 +197,7 @@ input {
 #notice .container h1 {
     font-size: 20px;
     background-color: var(--sub-color01);
-    color:#fff;
+    color: #fff;
     height: 45px;
     text-align: center;
     padding-top: 6px;
@@ -322,7 +220,7 @@ input {
     display: flex;
     justify-content: center;
     margin: 23px;
-    background: rgb(236, 236, 236);
+    background: var(--bg-color02);
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -336,7 +234,7 @@ input {
 
 #notice-board ul li {
     width: 55px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 23px;
     text-decoration: none;
     text-align: center;
@@ -349,7 +247,6 @@ input {
 
 #notice-board ul li:first-child {
     background-color: var(--sub-color01);
-    outline: 2px solid #fff;
 }
 
 #notice-board ul a:hover {
@@ -362,6 +259,7 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px 30px;
+    outline: 1px solid red;
 }
 
 #notice .puppy img {
@@ -371,6 +269,7 @@ input {
 #notice .puppy .puppy-state {
     text-align: center;
     color: var(--sub-color01);
+    font-weight: 500;
 }
 
 #notice .main {
@@ -384,7 +283,6 @@ input {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    
 }
 
 #button-page .notice-page-btn {
@@ -392,13 +290,13 @@ input {
     width: 28px;
     height: 28px;
     background: transparent;
-    border: 1px solid var(—sub-color01);
+    border: 1px solid var(--sub-color01);
 }
 
 #button-page .notice-page-btn a {
-    color: var(—text-color);
+    color: var(--text-color);
 }
 
 #button-page .notice-page-btn:first-child {
-    background: var(—sub-color01);
+    background: var(--sub-color01);
 }
