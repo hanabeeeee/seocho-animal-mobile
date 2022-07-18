@@ -133,6 +133,12 @@ button {
 #main {
     width: 100%;
 }
+#main main {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
 /* 서초동물사랑센터 - 리트리버*/
 #main .title {
     display: flex;
@@ -163,13 +169,14 @@ button {
 #main .kakao {
     position: fixed;
     right: 10px;
+    /* margin-left: calc(50% - 10px); */
     bottom: 50px;
     z-index: 999;
 }
 
 #main .kakao img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 }

@@ -1,4 +1,6 @@
-/*---------- detail(상세페이지) ----------*/
+#detail {
+    width: 100%;
+}
 
 #detail .container {
     text-align: center;
@@ -20,19 +22,30 @@
     margin: 20px;
 }
 
+/*정보상자*/
+
 #detail main .info {
     background-color: #f4f4f4;
     margin: 20px;
     margin-top: 0;
     padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #detail main .info .date {
     display: flex;
     flex-direction: row;
-    align-items: center;
     font-size: 12px;
 }
+
+/* #detail main .info .date p {
+    position: absolute;
+    left: 40px;
+    margin-top: 5px;
+} */
 
 #detail main .info .date span {
     background: #fff;
@@ -42,46 +55,100 @@
     margin-right: 12px;
 }
 
-#detail main .info table {
+#info-box {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+#info-box, .col {
+    margin-top: 17px;
+}
+
+#info-box, .col, .col- {
     text-align: center;
-    width: 100%;
-    border-radius: 16px;
-    background-color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
+    padding-top: 14px;
+}
+
+#info-box .col- {
     margin-bottom: 20px;
 }
 
-#detail main .info table .info1 {
-    border-radius: 16px 0px 0px 0px;
-    text-align: center;
-}
-
-#detail main .info table .info2 {
-    border-radius: 0px 0px 0px 16px;
-    text-align: center;
-}
-
-#detail main .info table th {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #7FC241;
+#info-box .info01 {
+    background: var(--sub-color01);
     color: #fff;
-    padding: 15px 20px;
+    width: 50px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    border-radius: 20px 0px 0px 0px;
 }
 
-#detail main .info table td {
-    padding: 15px 31px;
+#info-box .info02 {
+    background: #fff;
+    color: var(--text-color);
+    width: 100px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
 }
+
+#info-box .info03 {
+    background: var(--sub-color01);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+}
+
+#info-box .info04 {
+    background: #fff;
+    color: var(--text-color);
+    width: 100px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    border-radius: 0px 20px 0px 0px;
+}
+
+#info-box .info05 {
+    background: var(--sub-color01);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+#info-box .info06 {
+    background: #fff;
+    color: var(--text-color);
+    width: 100px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+}
+
+#info-box .info07 {
+    background: var(--sub-color01);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+}
+
+#info-box .info08 {
+    background: #fff;
+    color: var(--text-color);
+    width: 100px;
+    height: 50px;
+    border-radius: 0px 0px 20px 0px;
+}
+
 
 #detail main .info .text {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
 }
 
 #detail main .call-btn {

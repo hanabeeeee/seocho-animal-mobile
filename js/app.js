@@ -11,7 +11,12 @@ $(function(){
 
 
     const swiper = new Swiper('#main .swiper', {
-
+  
+      autoplay: {
+        delay: 5000,
+      },
+      direction: 'horizontal',  // 효과
+      loop: true,
       
       navigation: {
         // class명 지정
