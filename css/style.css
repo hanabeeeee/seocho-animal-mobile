@@ -26,6 +26,9 @@ body {
     font-weight: 400;
     background-color: var(--bg-color03);
     color: var(--text-color);
+    /*   pc에서 작게 보이게   */
+    max-width: 500px;
+    margin: 0 auto
 }
 
 input,
