@@ -21,4 +21,11 @@ table {
 
 body {
   font-size: 100%;
+  max-width: 450px;
+  margin: 0;
+}
+
+html {
+  display: flex;
+  justify-content: center;
 }
