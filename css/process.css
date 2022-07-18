@@ -1,5 +1,6 @@
 /* --------------------process------------------------- */
-#process .container {
+#process {
+    width: 100%;
     text-align: center;
 }
 
